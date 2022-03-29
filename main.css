@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --primary-color: #4daf54;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #4daf54, #3d8880);
+    font-family: "Poppins";
+}
+
+.the {
+    margin: 120px auto;
+    width: 320px;
+    height: 400px;
+    background: #272d40;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+
+.the_tim, .the_gio {
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.the_gio {
+    left: unset;
+    right: 20px;
+}
+.the_anh {
+    width: 90%; 
+    transition: 0.5s;
+}
+
+.the_anh img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.the_td, .the_gia {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.the_td {
+    color: var(--primary-color);
+}
+
+.the_kichco, .the_mau {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.the_kichco span {
+    padding: 2px 10px;
+    background: #dadada;
+    color: black;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.the_kichco span:hover {
+    transform: scale(1.1);
+}
+
+.the_mau span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.the_mau span:hover {
+    transform: scale(1.3);
+}
+
+.the_mau--green {
+    background: green;
+}
+
+.the_mau--red {
+    background: red;
+}
+
+.the_mau--black {
+    background: black;
+}
+
+.the_act button {
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 5px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.the_act button:hover {
+    transform: scale(0.9);
+}
+
+.the:hover .the_anh {
+    transform: translateY(-90px) rotate(-20deg);
+}
+
+.the:hover .the_td, .the:hover .the_gia {
+    transform: translate(-38px, -72px);
+}
+
+.the:hover .the_gia {
+    transform: translate(-117px, -72px);
+}
+
+.the_kichco {
+    margin-top: 150px;
+}
+
+.the_kichco, .the_mau, .the_act {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.the:hover .the_kichco,
+.the:hover .the_mau,
+.the:hover .the_act {
+    visibility: visible;
+    opacity: 100;
+    transition-delay: 0.4s;
+}
+
+.the:hover .the_kichco {
+    margin-top: -30px;
+}
+
+
+
+
+
+
